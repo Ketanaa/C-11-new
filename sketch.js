@@ -1,5 +1,6 @@
 var bow , arrow,  background;
 var bowImage, arrowImage, green_balloonImage, red_balloonImage, pink_balloonImage ,blue_balloonImage, backgroundImage;
+var score=0
 
 function preload(){
   
@@ -70,6 +71,7 @@ function draw() {
 
 
   drawSprites();
+  text("score: "+ score, 270,30);
 }
 
 
@@ -119,6 +121,6 @@ function pinkBalloon() {
   pink.addImage(pink_balloonImage);
   pink.velocityX = 3;
   pink.lifetime = 150;
-  pink.scale = 0.1;
+  //pink.scale = 0.1;
 }
 
